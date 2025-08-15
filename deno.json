@@ -1,0 +1,33 @@
+{
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 4,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "always",
+    "include": ["src/", "tests/"],
+    "exclude": ["dist/", "node_modules/"]
+  },
+  "tasks": {
+    "doc": {
+      "description": "Deno create documentation command",
+      "command": "deno doc --html --name='structured logger' mod.ts"
+    },
+    "example": {
+      "description": "Deno run example code command",
+      "command": "deno run ./example/main.ts"
+    },
+    "fmt": {
+      "description": "Deno format files command",
+      "command": "deno fmt"
+    },
+    "lint": {
+      "description": "Deno lint files command",
+      "command": "deno lint"
+    }
+  },
+  "imports": {
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
