@@ -25,6 +25,10 @@
     "lint": {
       "description": "Deno lint files command",
       "command": "deno lint"
+    },
+    "test": {
+      "description": "Deno Test files command",
+      "command": "deno test --allow-env"
     }
   },
   "imports": {
