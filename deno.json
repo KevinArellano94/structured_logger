@@ -27,7 +27,7 @@
       "command": "deno lint"
     },
     "test": {
-      "description": "Deno Test files command",
+      "description": "Deno test files command",
       "command": "deno test --allow-env"
     }
   },
